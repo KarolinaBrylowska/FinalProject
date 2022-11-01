@@ -1,0 +1,165 @@
+{
+  "id": "43dbbc5e-d64b-4346-a7ff-db414246d4bd",
+  "version": "2.0",
+  "name": "Projekt Koncowy",
+  "url": "https://ugryzione.pl",
+  "tests": [{
+    "id": "67459ffb-1f40-4104-828b-4c8b7cc2106f",
+    "name": "Dodanie do koszyka produktu z kategorii \"Sklep\"",
+    "commands": [{
+      "id": "72c3ecf8-2586-4db0-b369-3ec73a40980f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebb0f093-95e8-421a-b5b9-3504bb08c9b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x769",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3b23af9f-48d5-464d-a24e-e3639a487e8b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sgpb-popup-close-button-1",
+      "targets": [
+        ["css=.sgpb-popup-close-button-1", "css:finder"],
+        ["xpath=//img[@alt='Close']", "xpath:img"],
+        ["xpath=//div[@id='sgpb-popup-dialog-main-div-wrapper']/div/img", "xpath:idRelative"],
+        ["xpath=//div[9]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02eab6df-4de6-4b7e-a984-9502c8d38f17",
+      "comment": "",
+      "command": "click",
+      "target": "css=#menu-item-47 .menu-text",
+      "targets": [
+        ["css=#menu-item-47 .menu-text", "css:finder"],
+        ["xpath=//li[@id='menu-item-47']/a/span", "xpath:idRelative"],
+        ["xpath=//li[3]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'SKLEP')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7412827d-8856-47d4-9ea3-aee4667b9c6e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.fusion-icon-grid",
+      "targets": [
+        ["css=.fusion-icon-grid", "css:finder"],
+        ["xpath=//section[@id='content']/div[2]/ul[2]/li/a/i", "xpath:idRelative"],
+        ["xpath=//div[2]/ul[2]/li/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a846240a-dd09-462c-ab5e-2420c5494eba",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Dodaj do koszyka",
+      "targets": [
+        ["linkText=Dodaj do koszyka", "linkText"],
+        ["css=.product:nth-child(5) .button", "css:finder"],
+        ["xpath=//a[contains(text(),'Dodaj do koszyka')]", "xpath:link"],
+        ["xpath=//section[@id='content']/ul/li[5]/div/div/div[2]/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '?add-to-cart=1935')]", "xpath:href"],
+        ["xpath=//li[5]/div/div/div[2]/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Dodaj do koszyka')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e6f7c92-cf07-43b9-9217-b02c380e4799",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fusion-main-menu-icon-active",
+      "targets": [
+        ["css=.fusion-main-menu-icon-active", "css:finder"],
+        ["xpath=//ul[@id='menu-glowny']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ugryzione.pl/koszyk/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "964d8a39-84ba-4d74-bbb8-325f0d50041f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.woocommerce-cart-form__cart-item > .product-subtotal",
+      "targets": [
+        ["css=.woocommerce-cart-form__cart-item > .product-subtotal", "css:finder"],
+        ["xpath=//div[@id='post-33']/div/div/form/div/table/tbody/tr/td[4]", "xpath:idRelative"],
+        ["xpath=//td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "51441f28-b5c2-461d-bcdd-23d94cb2ef7d",
+    "name": "Usunięcie produktu z koszyka",
+    "commands": [{
+      "id": "6c0d6b21-b9d0-4f5f-a1ac-de1730cd802f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f7751807-653f-4076-9aaf-35b6342cb7cc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1200x769",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a22a3027-43ba-4a3e-8163-684d0d4055d1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sgpb-popup-close-button-1",
+      "targets": [
+        ["css=.sgpb-popup-close-button-1", "css:finder"],
+        ["xpath=//img[@alt='Close']", "xpath:img"],
+        ["xpath=//div[@id='sgpb-popup-dialog-main-div-wrapper']/div/img", "xpath:idRelative"],
+        ["xpath=//div[9]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0951fdff-2933-43f2-9556-924a03a73256",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fusion-menu-cart > .fusion-main-menu-icon",
+      "targets": [
+        ["css=.fusion-menu-cart > .fusion-main-menu-icon", "css:finder"],
+        ["xpath=//ul[@id='menu-glowny']/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ugryzione.pl/koszyk/')]", "xpath:href"],
+        ["xpath=//nav/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ed387d2c-a1dd-4bd9-adbb-846494ef997d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=×",
+      "targets": [
+        ["linkText=×", "linkText"],
+        ["css=.remove", "css:finder"],
+        ["xpath=//a[contains(text(),'×')]", "xpath:link"],
+        ["xpath=//div[@id='post-33']/div/div/form/div/table/tbody/tr/td[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://ugryzione.pl/koszyk/?remove_item=8d55a249e6baa5c06772297520da2051&_wpnonce=b0c0c050d3')]", "xpath:href"],
+        ["xpath=//td[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'×')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1b128fdf-bd07-463f-997b-b93f2b25121e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://ugryzione.pl/"],
+  "plugins": []
+}
